@@ -23,11 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-Cypress.Commands.add('captureTestResults', () => {
-    cy.on('test:after:run', (test, runnable) => {
-      const testName = test.title;
-      const passed = test.state === 'passed';
-      Cypress.config('testResults').push({ testName, passed });
-    });
-  });

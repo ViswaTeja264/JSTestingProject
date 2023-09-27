@@ -1,0 +1,5 @@
+{
+    "MealDB": "cypress/e2e/MealsDB.cy.js",
+    "Portfolio": "cypress/e2e/Portfolio.cy.js"
+}
+

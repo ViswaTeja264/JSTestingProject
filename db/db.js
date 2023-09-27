@@ -3,7 +3,7 @@ const { MongoClient } = require('mongodb');
 const mongoURI = 'mongodb+srv://viswa:viswa12345@cluster0.gjra4tl.mongodb.net/';
 const dbName = 'CypressTestResults';
 
-const client = new MongoClient(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+const client = new MongoClient(mongoURI);
 
 async function connectToMongoDB() {
   try {

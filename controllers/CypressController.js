@@ -1,21 +1,24 @@
 const { ObjectId } = require('mongodb');
-const { CypressResult } = require('../schema/schema');
+const { CypressResult } = require('../modal/schema');
 const cypress = require('cypress');
 const { getClient, getDbName } = require('../db/db'); // Import MongoDB connection and dbName
+const fixtures = require('../cypress/fixtures/Tasks.json');
+
 
 const runCypressTests = async (req, res) => {
-  if (req.body.TaskName === 'MealDB' || req.body.TaskName === 'Portfolio') {
+  
+  const taskName = req.body.TaskName;
+  const testFile = fixtures[taskName];
+  
+  if (testFile) {
     try {
       const results = await cypress.run({
         config: {
           baseUrl: req.body.url,
         },
-        spec: [
-          req.body.TaskName === 'MealDB' ? 'cypress/e2e/MealsDB.cy.js' : 'cypress/e2e/Portfolio.cy.js'
-        ],
+        spec: [testFile],
       });
-
-      console.log(results);
+      // Rest of your code to handle the results
 
       // Extract test names and pass/fail status from the runs and tests
       const tests = results.runs.reduce((accumulator, run) => {
