@@ -1,6 +1,6 @@
 > My MealDB Project Details
 
-This Project Is Mainly Focused On Testing The MealDB WebPage FrontEnd And Api Testing
+This Project Is Mainly Focused On Testing The MealDB WebPage FrontEnd And API Testing
 
 For Creating The TestCases We Need To Install Cypress From npm package
 
