@@ -9,10 +9,7 @@ This repository demonstrates JavaScript testing projects using the Cypress testi
 - [Installation](#installation)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
-- [Projects](#projects)
-- [Testing](#testing)
-  - [Cypress Tests](#cypress-tests)
-  - [Express API Tests](#express-api-tests)
+- [Projects](#Automated-Testing-Projects)
 
 ## Project Overview
 This projects is designed to demonstrate testing methodologies using popular JavaScript tools and frameworks. It consists of end-to-end tests using Cypress for the frontend and API tests using Express.js and Postman for the backend.
@@ -40,8 +37,17 @@ Make sure you have the following prerequisites installed:
 1. Start the Express.js server
     ```bash
    npm start
-
-##
+2. Open Postman tool and send POST request to server
+   ```bash
+   http://localhost:3000/
+3. Send The Request Body
+   ```bash
+   {
+    "TaskName" : ".....",
+    "url"  : "....."
+   }
+4. Click On Send To Send The Post Request
+5. Capture The Cypress Test Results In Response Body
 
 ## Folder Structure
 - JavaScriptAutomation
@@ -78,12 +84,30 @@ Make sure you have the following prerequisites installed:
    - cypress.config.js
    - package-lock.json
    - package.json
-## Projects
-1. Cypress Testing Project for MealDB
+## Automated Testing Projects
 
-This project contains UI and API testing using Cypress for the [MealDB website](https://mealdatabase.netlify.app/).
+This repository contains three Cypress testing projects:
 
-### How to Run UI Tests
+1. **Cypress Testing for MealDB Website**
+   - UI testing for the [MealDB website](https://mealdatabase.netlify.app/).
+   - [Documentation and Test Details](#cypress-ui-testing-for-mealDB)
+   - API testing for the [MealDB website](https://mealdatabase.netlify.app/).
+   - [Documentation and Test Details](#cypress-api-testing-for-mealDB)
+
+2. **Cypress Testing for Portfolio Website**
+   - UI testing for the [Portfolio website](https://hackathon-suriya-portfolio.netlify.app/)
+   - [Documentation and Test Details](#cypress-ui-testing-for-portfolio)
+   - API testing for the [Portfolio website](https://hackathon-suriya-portfolio.netlify.app/)
+   - [Documentation and Test Details](#cypress-api-testing-for-portfolio)
+
+3. **Cypress Testing for Fullstack Node.js App**
+   - UI testing On The [FrontEnd App](https://guvi-note-frontend.vercel.app/)
+   - [Documentation and Test Details](#cypress-ui-testing-for-fullstack-nodejs-app)
+   - API testing On The [BackEnd App](https://guvi-goal-backend.onrender.com/)
+   - [Documentation and Test Details](#cypress-api-testing-for-fullstack-nodejs-app)
+
+
+### Cypress UI Testing For MealDB
 
 1. Clone this repository.
 2. Install dependencies: `npm install`
@@ -99,7 +123,7 @@ This project contains UI and API testing using Cypress for the [MealDB website](
 
 6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
 
-### How to Run API Tests
+### Cypress API Testing For MealDB
 
 1. Clone this repository.
 2. Install dependencies: `npm install`
@@ -111,6 +135,70 @@ This project contains UI and API testing using Cypress for the [MealDB website](
    {
     "TaskName" : "MealDBAPI",
     "url"  : "https://mealdatabase.netlify.app/"
+   }
+
+6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
+
+### Cypress UI Testing For Portfolio
+
+1. Clone this repository.
+2. Install dependencies: `npm install`
+3. Start The Server: `npm start`
+4. Send The Post Request To The Server:
+   `http://localhost:3000/`
+5. Pass The Request Body With TaskName And URL:
+
+   {
+    "TaskName" : "PortfolioUI",
+    "url"  : "https://hackathon-suriya-portfolio.netlify.app/"
+   }
+
+6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
+
+### Cypress API Testing For Portfolio
+
+1. Clone this repository.
+2. Install dependencies: `npm install`
+3. Start the local server: `npm start`
+4. Send The Post Request To The Server:
+   `http://localhost:3000/`
+5. Pass The Request Body With TaskName And URL:
+
+   {
+    "TaskName" : "PortfolioAPI",
+    "url"  : "https://hackathon-suriya-portfolio.netlify.app/"
+   }
+
+6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
+
+### Cypress UI Testing For Fullstack Nodejs App
+
+1. Clone this repository.
+2. Install dependencies: `npm install`
+3. Start The Server: `npm start`
+4. Send The Post Request To The Server:
+   `http://localhost:3000/`
+5. Pass The Request Body With TaskName And URL:
+
+   {
+    "TaskName" : "FullStackUI",
+    "url"  : "https://guvi-note-frontend.vercel.app/"
+   }
+
+6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
+
+### Cypress API Testing For Fullstack Nodejs App
+
+1. Clone this repository.
+2. Install dependencies: `npm install`
+3. Start The Server: `npm start`
+4. Send The Post Request To The Server:
+   `http://localhost:3000/`
+5. Pass The Request Body With TaskName And URL:
+
+   {
+    "TaskName" : "FullStackAPI",
+    "url"  : "https://guvi-goal-backend.onrender.com"
    }
 
 6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
