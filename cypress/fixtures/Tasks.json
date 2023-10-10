@@ -1,5 +1,9 @@
 {
-    "MealDB": "cypress/e2e/MealsDB.cy.js",
-    "Portfolio": "cypress/e2e/Portfolio.cy.js"
+    "MealDBUI": "cypress/e2e/MealsDB.cy.js",
+    "MealDBAPI": "cypress/e2e/MealsDBAPITesting.cy.js",
+    "PortfolioUI": "cypress/e2e/Portfolio.cy.js",
+    "PortfolioAPI": "cypress/e2e/PortfolioAPITesting.cy.js",
+    "FullStackUI": "cypress/e2e/FullStackUITesting.cy.js",
+    "FullStackAPI": "cypress/e2e/FullStackAPITesting.cy.js"
 }
 
