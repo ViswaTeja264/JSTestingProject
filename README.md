@@ -98,3 +98,19 @@ This project contains UI and API testing using Cypress for the [MealDB website](
    }
 
 6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
+
+### How to Run API Tests
+
+1. Clone this repository.
+2. Install dependencies: `npm install`
+3. Start the local server: `npm start`
+4. Send The Post Request To The Server:
+   `http://localhost:3000/`
+5. Pass The Request Body With TaskName And URL:
+
+   {
+    "TaskName" : "MealDBAPI",
+    "url"  : "https://mealdatabase.netlify.app/"
+   }
+
+6. Click On Send To Send The Post Request That Will Automatically Trigger The Cypress TestCases.
